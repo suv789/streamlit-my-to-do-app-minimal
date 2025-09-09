@@ -5,6 +5,7 @@ import functions
 
 todos = functions.get_todos("todos.txt")
 
+
 def add_todo():
     todo = st.session_state["new_todo"]
     todos.append(todo + "\n")
@@ -14,7 +15,7 @@ def add_todo():
 
 
 st.title("My to-do📃")
-st.subheader("Write your to-do and stay productive")
+st.subheader("Write to-do and stay productive")
 
 for index, todo in enumerate(todos):
     check_box = st.checkbox(todo, key=todo)  
