@@ -16,6 +16,17 @@ def add_todo():
 
 st.title("My to-do📃")
 st.subheader("Write to-do and stay productive")
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #4a5759;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 for index, todo in enumerate(todos):
     check_box = st.checkbox(todo, key=todo)  
